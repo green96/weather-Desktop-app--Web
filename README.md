@@ -24,3 +24,7 @@ You can donate (buy me a coffee) here → https://coff.ee/nhangreenboy
 # Download my desktop app here
 link: https://greenboy123.itch.io/weather-app
 #OpenSource #Windows #WeatherApp #DesktopApp #LightweightSoftware #IndieDev #GitHub 
+
+
+# Set Up
+Set Up the same with Html css and javascript, Hosted it somewhere and build the app with ==> https://websktop.net/
