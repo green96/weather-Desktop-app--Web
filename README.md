@@ -27,4 +27,4 @@ link: https://greenboy123.itch.io/weather-app
 
 
 # Set Up
-Set Up the same with Html css and javascript, Hosted it somewhere and build the app with ==> https://websktop.net/
+Set Up the same with web development: Html css and javascript, Hosted it somewhere and build the app with ==> https://websktop.net/
