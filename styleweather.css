@@ -1,0 +1,309 @@
+
+*{
+    /*main font is Pixelify Sans (back up font is:sans-serif)*/
+    font-family: "Press Start 2P", sans-serif;
+}
+
+/* #032659 #585858*/
+body{
+    background-color: #011430;
+    margin: 0;/*set margin: 0 để web không bị dư cái viền bên ngoài*/
+    display: flex;
+    flex-direction: column;/*sắp xếp các phần tử flex vô 1 column*/
+    align-items: center;/*this center flex elements*/
+
+
+    background-image: url("weather\ app\ background.png");
+    background-repeat: no-repeat;
+    background-position-x: center; /*position background-image tại x=0(ở giữa trang web)*/
+    background-size: 1350px 1000px; 
+}
+
+.weatherForm{
+    margin: 20px;/*tạo viền 20 pixel bên ngoài cái form*/
+
+
+}
+
+
+.cityInput{
+    padding: 10px;/*mở rộng viền bên ngoài cái text lên 10px (chèn 10px vào vị trí giữa text và textbox)*/
+    font-size: 2em;/*tăng font chữ lên gấp 2 lần*/
+    border: 2px solid hsla(0, 0%, 0%, 0.296);/*tạo viền dày 2 pixel solid và black*/
+
+    border-radius: 10px;/*round the corner*/
+    margin: 10px;/*tạo khoảng cách 10 pixel cho phần bên ngoài textbox*/
+    width: 350px;/*rộng 350 pixel*/
+} 
+
+/*apply css property to all button that have type="submit"*/
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;/*in đậm*/
+    font-size: 2rem;
+    background-color: hsl(120, 37%, 49%);/*button color*/
+    color: white; /*text in button color*/
+    border: none;/*xóa viền*/
+    border-radius: 5px;/*bo tròn góc 5 pixel*/
+    cursor: pointer;/*chuyển mouse  cursor thành dạng  pointer khi di chuột qua*/
+}
+
+/*change submit button background-color when hover*/
+button[type="submit"]:hover{
+    background-color: hsl(120, 37%, 30%);
+}
+
+.card{
+    background: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(219, 100%, 67%));
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.508);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*This horizontally align the items*/
+}
+
+h1{
+    font-size: 3.5rem;/*tăng font header 1(tên thành phố) lên gấp 3.5 lần*/
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/*apply css to two classes*/
+.cityDisplay,.temDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.759);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weatherEmoji{
+    margin: 0;/*Remove all margin around the Emoji*/
+    font-size: 7.5rem;
+}
+
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+
+#img1{
+    position: fixed;
+    left: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    display: none;
+}
+
+#img2{
+    position: fixed;
+    right: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#question_mark{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#umbrella{
+    position: fixed;
+    bottom: 0;/*luon o bottom*/
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    display: none;
+}
+
+#raincloud1{
+    position: fixed;
+    left: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#raincloud2{
+    position: fixed;
+    right: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#exclamation_point{
+    position: fixed;
+    bottom: 0;/*luon o bottom*/
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#cloud_snow1{
+    position: fixed;
+    left: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+
+}
+
+#cloud_snow2{
+    position: fixed;
+    right: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+#compass{
+    position: fixed;
+    bottom: 0;/*luon o bottom*/
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: none;
+}
+
+
+#smiley{
+    position: fixed;
+    left: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    display: none;
+}
+
+#camera{
+    position: fixed;
+    right: 100px;
+    width: 200px;
+    /*render pixel cho image*/
+    image-rendering: pixelated;
+    /*use grow animation*/
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    display: none;
+}
+
+
+@keyframes grow{
+     50%{transform: scale(1.2);} /*This will grow and then shrink back into place in one smooth motion  */
+}
+
+/*If the width of our screen or window is 1000px or below we can change some css properies */
+/*code dưới Giúp tương thích với điện thoại*/
+/*This also known as responsive css*/
+@media screen and (max-width:1000px){
+    form, button,div, input[type="text"]{
+        width: 100%;/* form, button,div, input[type="text"] elements are talking up 100% of the width available(which is good for moblie device)*/
+    }
+    
+    img{
+        position: absolute; /* hoặc relative nếu muốn dựa trên cha */
+        bottom: 0px;          /* cho img ma hien ra xuong bottom*/
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleweather.css">
+
+
+    <!--connect pixel font from google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+
+
+
+
+
+    <!--Tạo 1 cái form có class là weatherForm-->
+    <form class="weatherForm">
+
+        <!--Hộp thoại text (textbox để input text)-->
+        <!--placeholder là gợi ý cần nhập gì vào ô textbox-->
+        <input type="text" class="cityInput" placeholder="Enter city">
+        
+        <!--
+        Thuộc tính type="submit" chỉ định rằng nút này là nút gửi form.
+        Khi nhấn nút, nó sẽ gửi form chứa nó (gửi dữ liệu tới server hoặc gọi JavaScript xử lý form).
+        Nếu nút nằm trong thẻ <form>...</form>, việc nhấn nút sẽ kích hoạt hành động action và method của form.
+        -->
+        <button id="GetWeatherButton" type="submit">Get Weather</button>
+
+    </form>
+
+
+    <!--The weather output will display like a card-->
+    <div class="card" = "display: none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!--Hiện thị thành phố-->
+        <!-- <h1 class="cityDisplay">Miami</h1> -->
+        <!--Hiện thị nhiệt dộ-->
+        <!--press ALT + 0176 on the number pad to get the degrees symbol-->
+        <!-- <p class="temDisplay">90°F</p> -->
+
+        <!--hiển thị Độ ẩm -->
+        <!-- <p class="humidityDisplay">Humidity: 75%</p> -->
+        <!--phần mô tả thời tiết -->
+        <!-- <p class="descDisplay">Clear Skies</p> -->
+
+        <!--Display the weatherEmoji(we will late make this change depend on the weather)-->
+        <!--nút Win + ;(nút chấm phẩy) để lấy emoji-->
+        <!-- <p class="weatherEmoji">☀️</p> -->
+
+        <!--This will display when error-->
+        <!-- <p class="errorDisplay">Please enter a city</p> -->
+
+    </div>
+
+
+    <img id="img1" src="cloud.png" alt="cloud">
+
+    <img id="img2" src="cloud.png" alt="cloud" >
+
+    <img id="question_mark"  src="question_mark.png" alt="question_mark">
+
+
+    <img id="umbrella" src="umbrella.png" alt="umbrella">
+
+    <img id="raincloud1"  src="raincloud.png" alt="raincloud">
+    
+    <img id="raincloud2"  src="raincloud.png" alt="raincloud">
+
+    <img id="exclamation_point" src="exclamation_point.png" alt="exclamation_point">
+
+    <img id="cloud_snow1" src="cloud_snow.png" alt="cloud_snow">
+
+    <img id="cloud_snow2" src="cloud_snow.png" alt="cloud_snow">
+
+    <img id="compass" src="compass.png" alt="compass">
+
+
+    <img id="smiley" src="smiley.png" alt="smiley">
+
+    <img id="camera" src="camera.png" alt="camera">
+
+    <script src="index.js"></script>
+
+    <!--ten mien cua website nay: https://greencat.infinityfreeapp.com/Learnjavascriptbymakingaweatherapp/-->
+</body>
+</html>
