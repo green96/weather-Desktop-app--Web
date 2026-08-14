@@ -17,6 +17,10 @@ If a weather app can be lightweight, why shouldn’t it be?
 The source code will be available for everyone to inspect, improve, and contribute to.
 
 Source: https://github.com/green96/weather-Desktop-app--Web
+
+💖 If you’d like to support my work even more:
+You can donate (buy me a coffee) here → https://coff.ee/nhangreenboy
+
 # Download my desktop app here
 link: https://greenboy123.itch.io/weather-app
 #OpenSource #Windows #WeatherApp #DesktopApp #LightweightSoftware #IndieDev #GitHub 
