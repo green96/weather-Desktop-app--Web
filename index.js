@@ -29,8 +29,8 @@ const GetWeatherButton = document.getElementById("GetWeatherButton");
 
 /*
 const: Đây là từ khóa trong JavaScript dùng để khai báo một biến hằng số, tức là sau khi gán giá trị, không thể thay đổi được.
-key này để được cấp quyền.apikey: Đây là tên của biến. Nó thường được dùng để lưu API key – một chuỗi mã định danh dùng để xác thực người dùng khi gọi các dịch vụ từ một API (Application Programming Interface).
-process.env.OPENWEATHER_API_KEY : Đây là giá trị của API key – một chuỗi ký tự duy nhất do một dịch vụ web cung cấp (ví dụ như OpenWeatherMap, Firebase, v.v.). Khi bạn muốn truy cập dữ liệu từ API đó, bạn cần cung cấp 
+apikey: Đây là tên của biến. Nó thường được dùng để lưu API key – một chuỗi mã định danh dùng để xác thực người dùng khi gọi các dịch vụ từ một API (Application Programming Interface).
+process.env.OPENWEATHER_API_KEY: Đây là giá trị của API key – một chuỗi ký tự duy nhất do một dịch vụ web cung cấp (ví dụ như OpenWeatherMap, Firebase, v.v.). Khi bạn muốn truy cập dữ liệu từ API đó, bạn cần cung cấp key này để được cấp quyền.
 
 */
 const apikey = process.env.OPENWEATHER_API_KEY;
